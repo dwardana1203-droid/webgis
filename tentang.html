@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebGIS Desa Suko Mulyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-danger bg-subtle">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">WebGIS Desa Suko Mulyo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peta.html">Peta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">Tentang kami</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+<style>
+    .navbar-nav .nav-link.active {
+        font-weight: bold;
+        color: #fff !important;
+        background-color: #000090;
+        border-radius: 0.25rem;
+    }
+</style>
+<script>
+  // Highlight "Tentang kami" as active
+  document.addEventListener("DOMContentLoaded", function() {
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach(function(link) {
+      if (link.getAttribute('href') === 'tentang.html') {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+      }
+    });
+  });
+</script>
+</nav>
+    <h1>Tentang Kami!</h1>
+    <div class="container mt-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h2 class="card-title text-danger">KKN PPU 10 DESA SUKO MULYO</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="border rounded p-2 bg-light text-center">
+                            <!-- Ganti src dengan path foto kelompok -->
+                            <img src="images/kel.jpg" alt="Foto Kelompok KKN PPU 10" class="img-fluid rounded mb-2" style="max-height:250px; object-fit:cover;">
+                            <div class="small text-muted">Foto Kelompok KKN PPU 10</div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="card-text">
+                            WebGIS Desa Suko Mulyo merupakan hasil karya mahasiswa KKN PPU 10 yang bertujuan untuk memberikan informasi geografis dan potensi desa secara interaktif. Dengan adanya WebGIS ini, diharapkan masyarakat dan pihak terkait dapat lebih mudah mengakses data dan mengenal Desa Suko Mulyo secara digital.
+                        </p>
+                        <h5 class="mt-4">List Anggota:</h5>
+                        <ol>
+                            <li>Adam Prima Harum</li>
+                            <li>Alif Fajar Saputra</li>
+                            <li>Bella Sapitri</li>
+                            <li>Dwi Wahyu Wardana</li>
+                            <li>Frisa Nabila</li>
+                            <li>Mei Riesda Putri Suhartono</li>
+                            <li>Mei Rieska Putri Suhartono</li>
+                            <li>Sya'diah Rahmah Fulaiyah</li>
+                            <li>Tiara Fitri Aulia</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
